@@ -43,7 +43,7 @@ public class ProdutoModel {
 	@NotNull(message = "O atributo Data do Lançamento é Obrigatório!")
 	private LocalDate dataValidade;
 	
-	@NotBlank(message = "O atributo Tipo é Receita Médica e não pode possuir espaços em branco")
+	@NotBlank(message = "O atributo Receita Médica é obrigatório e não pode possuir espaços em branco")
 	@Size(min = 5, max = 100, message = "O Receita Médica Tipo precisa ter no mínimo 5 e máximo 100 caracteres.")
 	private String receitaMedica;
 	
